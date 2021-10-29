@@ -1,0 +1,100 @@
+.navBar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color:rgba(0, 255, 0, 0.5);
+    padding: 20px;
+    color: white;
+}
+
+.menuIcon {
+    display: inline-flex;
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+    margin-left: auto;
+    outline: none;
+    border: 0px;
+    font-weight: 400;
+    font-size: 40px;
+    background-color:rgb(4, 168, 4);
+}
+
+.menuIcon > svg {
+    border: 0px;
+    outline: none;
+}
+
+.homeLink {
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.hide {
+}
+
+.hiddenDiv {
+    width: 100%;
+}
+
+.rightNav {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.navLinks {
+    width: 100%;
+    padding: 20px 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeLink:hover {
+    cursor: pointer;
+}
+
+.navLinks:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.menuIcon:hover {
+    background-color: rgba(0, 255, 0, 0.6);
+}
+
+@media screen and (max-width: 576px) {
+    .hide {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .menuIcon {
+        visibility: hidden;
+    }
+
+    .hiddenDiv {
+        display: inline-flex;
+        flex-grow: calc();
+        width: auto;
+    }
+
+    .rightNav {
+        flex-direction: row;
+        display: inline-flex;
+        margin-left: auto;
+        width: auto;
+        height: auto;
+        align-items: center;
+    }
+
+    .navLinks {
+        width: auto;
+        display: inline-flex;
+    }
+}
